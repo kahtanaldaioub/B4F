@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   line-height: 1.3;
+     text-align: center;
+
+    background-color: rgb(140, 225, 225);
+    width: 100vw;
+    height: 100vh;
+    
+    
+}
+p{
+    width: 50vw;
+    text-indent: 50px;
+    word-break: keep-all;
+    /* letter-spacing: 10px; */
+}
+span{
+    text-decoration: underline;
+    text-transform: capitalize;
+
+}

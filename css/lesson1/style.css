@@ -1,0 +1,16 @@
+/* external css */
+/* selector(tags . # .... ) {}
+} */
+h1 {
+            color: blueviolet;
+            font-size: medium;
+            font-weight: bold;
+}
+.container{
+    background-color: beige;
+    color: black;
+}
+#hero{
+    background-color: aqua;
+    color: black;
+}

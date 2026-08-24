@@ -1,0 +1,17 @@
+.logo{
+    color: rgb(57, 53, 53);
+    text-align: left;
+    font-size: 100px;
+    margin-left: 20px;
+    
+}
+.hero{
+    color: rgb(174, 239, 239);
+}
+.btn1{
+    width: 200px;
+    height: 120px;
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 20px;
+}
