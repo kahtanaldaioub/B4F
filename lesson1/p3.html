@@ -7,12 +7,31 @@
 </head>
 <body>
     <H1>Gallary</H1>
-    <picture>
-    <img src="./images/one.png" alt="nmothaj" title="nmothaj" >
+
+    <img src="./images/one.png" alt="nmothaj" title="nmothaj" sizes="(max-width: 600px) 500px,
+               (max-width: 1200px) 1000px,
+               2000px">
     <br>
-    <img src="./images/two.png" alt="imthan" title="imthan">
-        <br>
-    <img src="./images/three.png" alt="mohadra" title="mohadra">
+    <img src="./images/three.png" alt="imthan" title="imthan" sizes="(max-width: 600px) 500px,
+               (max-width: 1200px) 1000px,
+               2000px">
+    <img src="./images/three.png" alt="mohadra" title="mohadra" sizes="(max-width: 600px) 500px,
+               (max-width: 1200px) 1000px,
+               2000px">
+
+    <h2>Using picture element for art direction</h2>
+    <picture>
+        <source media="(max-width: 600px)" srcset="./images/three.png">
+        <source media="(max-width: 1200px)" srcset="./images/three.png">
+        <img src="./images/three.png" alt="Responsive image with different crops for different devices">
+        <img src="./images/three.png" alt="Responsive image with different crops for different devices">
+    </picture>
+    
+    <h2>Responsive hero image</h2>
+    <picture>
+        <source media="(max-width: 768px)" srcset="./images/three.png">
+        <source media="(min-width: 769px)" srcset="./images/three.png">
+        <img src="./images/three.png" alt="Hero banner image">
     </picture>
     
 </body>
