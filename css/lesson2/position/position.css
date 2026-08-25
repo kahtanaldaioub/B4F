@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+ margin-bottom: 30px;
+ padding-top: 55px;
+}
+
+.box{
+    position: relative;
+    margin: 5px;
+    padding: 20px;
+  width: 50%;
+  height: 50%;
+  background-color: aqua;
+}
+
+.nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: aquamarine;
+    
+}
+.logo{
+    text-align: center
+}
+.links{
+    padding: 20px;
+
+}
+
+.ab
+{
+    
+    background-color: blueviolet;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+}
+.ac{
+    background-color: blueviolet;
+    position: absolute;
+    bottom:0 ;
+    right: 0;
+    padding: 5px;
+}

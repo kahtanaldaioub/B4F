@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    flex-direction: column;
+    position: relative;
+    background-color: azure;
+    padding: 5px;
+    border-radius: 8px;
+
+}
+.name{
+    margin: 12px;
+    font-size: large;
+    font-weight: 600;
+}
+img{
+    width: 200px;
+    height: 150px;
+    height: 50%;
+}
+.badge{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: gold;
+    padding: 12px;
+}
+.edu{
+    margin: 12px;
+    line-height:1.4 ;
+}
+.btn
+{
+    cursor: pointer;
+    background-color: blue;
+    padding: 8px;
+    margin: 15px;
+    
+}

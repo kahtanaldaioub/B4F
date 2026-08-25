@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 5px 5px;
+    background-color: aquamarine;
+
+}
+
+.my-box{
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.my-box2{
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+}

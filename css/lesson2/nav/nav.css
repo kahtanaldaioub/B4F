@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+   
+}
+.navbar{
+    background-color: rgb(53, 211, 69);
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    justify-content: space-between;
+    
+}
+.logo{
+   margin: 15px ;
+   
+    font-size: 24px;
+    font-weight: 800;
+}
+nav{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: blue;
+    margin-left: 5px;
+}
+a:hover{
+    color:aquamarine;
+}
