@@ -176,6 +176,7 @@ a:hover{
 }
 .theming{
     font-weight: 700;
+    
 }
 .text{
     color: var(--color-text-secondary);
