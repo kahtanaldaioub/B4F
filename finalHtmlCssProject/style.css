@@ -591,6 +591,7 @@ a {
     flex-direction: column;
     margin: 70px;
     background-color: var(--color-bg);
+    
 }
 .p-cards {
     display: flex;
@@ -601,6 +602,7 @@ a {
     gap: 25px;
     flex-wrap: wrap;
     padding-top: 30px;
+   margin-bottom:30px ;
 }
 .project-card {
     width: 320px;
@@ -668,10 +670,10 @@ a {
     align-items: start;
     gap: 60px;
     padding: 70px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: var(--color-bg);
-    width: 100%;
+    width: 100vw;
+    
+    background-color: var(--color-border);
+    
     
 }
 
