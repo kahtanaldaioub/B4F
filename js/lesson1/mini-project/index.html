@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="center">
+      <h1> profile genrator</h1>
+      <form action="">
+        <section class="sec1">
+            <div class="file">
+                <label for="fname">fname</label>
+          <input type="text" name="fname" id="fname" />
+            </div>
+          
+        
+          <div class="file">
+            
+            <label for="lname">lname</label>
+            <input type="text" name="lname" id="lname" />
+          </div>
+          <div class="file">
+            <label for="age">age</label>
+            <input type="number" name="age" id="age" />
+          </div>
+        </section>
+        <section class="sec2">
+            <div class="file"><label for="email">email</label>
+          <input type="email" name="email" id="email" /></div>
+            <div class="file">
+                <label for="city">city</label>
+          <input type="text" name="city" id="city" />
+            </div>
+            <div class="file">
+                <label for="jobt">jobt</label>
+          <input type="text" name="jobt" id="jobt" />
+            </div>
+          
+          
+          
+        </section>
+        <button onclick="genrate(event)">Genrate</button>
+      </form>
+
+      <div id="card">
+
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
