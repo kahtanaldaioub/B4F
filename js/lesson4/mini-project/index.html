@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: 20px auto; }
+    .section { background: #f9f9f9; padding: 15px; margin-bottom: 20px; border-radius: 4px; }
+    input, select, button { padding: 8px; margin: 5px; }
+    .output { background: #f0f0f0; padding: 15px; border-radius: 4px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Function Dashboard</h1>
+
+  <div class="section">
+    <h2>Greeting</h2>
+    <input type="text" id="greetName" placeholder="Name" value="John">
+    <input type="number" id="greetAge" placeholder="Age">
+    <button onclick="showGreeting()">Greet</button>
+    <div id="greetingOutput" class="output"></div>
+  </div>
+
+  <div class="section">
+    <h2>Calculator</h2>
+    <input type="text" id="calcNumbers" placeholder="Numbers (comma separated)" value="1,2,3,4">
+    <select id="calcOp">
+      <option value="add">Add</option>
+      <option value="subtract">Subtract</option>
+      <option value="multiply">Multiply</option>
+    </select>
+    <button onclick="showCalc()">Calculate</button>
+    <div id="calcOutput" class="output"></div>
+  </div>
+
+  <div class="section">
+    <h2>Counter</h2>
+    <button onclick="counter.increment(); showCounter()">+</button>
+    <button onclick="counter.decrement(); showCounter()">-</button>
+    <div class="output" id="counterOutput">0</div>
+  </div>
+
+  <script>
+    // Greeting
+    const makeGreeting = (name = "Guest", age) => {
+      if (age && age >= 18) return `Hello, ${name}. You are an adult.`;
+      return `Hello, ${name}.`;
+    };
+
+    function showGreeting() {
+      let name = document.getElementById("greetName").value.trim();
+      let age = parseInt(document.getElementById("greetAge").value);
+      let text = makeGreeting(name || undefined, isNaN(age) ? undefined : age);
+      document.getElementById("greetingOutput").textContent = text;
+    }
+
+    // Calculator
+    function calculate(operation, ...numbers) {
+      switch (operation) {
+        case "add": return numbers.reduce((a, b) => a + b, 0);
+        case "subtract": return numbers.reduce((a, b) => a - b);
+        case "multiply": return numbers.reduce((a, b) => a * b, 1);
+        default: return "Invalid";
+      }
+    }
+
+    function showCalc() {
+      let input = document.getElementById("calcNumbers").value;
+      let numbers = input.split(",").map(n => parseFloat(n.trim())).filter(n => !isNaN(n));
+      let op = document.getElementById("calcOp").value;
+      let result = calculate(op, ...numbers);
+      document.getElementById("calcOutput").textContent = `Result: ${result}`;
+    }
+
+    // Counter with closure
+    function createCounter() {
+      let count = 0;
+      return {
+        increment: () => count++,
+        decrement: () => count--,
+        getCount: () => count
+      };
+    }
+
+    const counter = createCounter();
+
+    function showCounter() {
+      document.getElementById("counterOutput").textContent = counter.getCount();
+    }
+  </script>
+</body>
+</html>

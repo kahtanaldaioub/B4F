@@ -31,4 +31,4 @@ console.log(newText)
 
 let str="fllgsd sglemge gmlsem"
 chars=[...str]
-console.log(str.indexOf(' '))
+console.log()
